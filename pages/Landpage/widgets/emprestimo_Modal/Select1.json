@@ -1,11 +1,10 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 10,
+  "bottomRow": 9,
   "boxShadow": "none",
-  "defaultText": "{{ AutorQuery.data[0]?.nome }}",
+  "defaultOptionValue": "GREEN",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,46 +13,50 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultText"
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
   "dynamicTriggerPathList": [],
-  "iconAlign": "left",
-  "inputType": "TEXT",
   "isDisabled": false,
+  "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "6cbut3e0f2",
-  "label": "",
+  "key": "rbus8qaops",
   "labelAlignment": "left",
-  "labelPosition": "Top",
-  "labelStyle": "",
+  "labelPosition": "Left",
+  "labelText": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 9,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 16,
-  "mobileLeftColumn": 9,
-  "mobileRightColumn": 29,
-  "mobileTopRow": 9,
+  "mobileBottomRow": 12,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "originalBottomRow": 11,
-  "originalTopRow": 7,
+  "optionLabel": "nome",
+  "optionValue": "_id",
   "parentColumnSpace": 6.4921875,
-  "parentId": "ihdkjwk7cg",
+  "parentId": "11fn9pr189",
   "parentRowSpace": 10,
+  "placeholderText": "Informe o nome do aluno",
   "renderMode": "CANVAS",
-  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 41,
-  "showStepArrows": false,
-  "topRow": 6,
-  "type": "INPUT_WIDGET_V2",
-  "version": 2,
-  "widgetId": "1ka3vgb5uq",
-  "widgetName": "Input1"
+  "rightColumn": 62,
+  "serverSideFiltering": false,
+  "sourceData": "{{userQuery.data}}",
+  "topRow": 5,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "k46uqvsfqf",
+  "widgetName": "Select1"
 }

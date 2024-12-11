@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 71,
+  "bottomRow": 70,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -297,7 +297,7 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{Find_livros1.data}}",
   "textSize": "0.875rem",
-  "topRow": 15,
+  "topRow": 14,
   "totalRecordsCount": "{{Total_record_livros1.data.n}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,

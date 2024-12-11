@@ -9,10 +9,28 @@
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
     }
   },
-  "dynamicBindingPathList": [],
+  "dynamicBindingPathList": [
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem9cfs0g3jbr.isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem2.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem9cfs0g3jbr.isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem3.onClick"
     }
   ],
   "groupButtons": {
@@ -49,6 +67,7 @@
           "widgetId": "5wiwrfbb42"
         }
       },
+      "onClick": "{{navigateTo('Landpage', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "widgetId": ""
     },
@@ -62,39 +81,27 @@
       "isVisible": true,
       "label": "Mais",
       "menuItems": {
-        "menuItem1": {
-          "backgroundColor": "#FFFFFF",
-          "id": "menuItem1",
-          "index": 0,
-          "isDisabled": false,
-          "isVisible": true,
-          "label": "First Option",
-          "onClick": "",
-          "widgetId": ""
-        },
-        "menuItem2": {
-          "backgroundColor": "#FFFFFF",
-          "id": "menuItem2",
-          "index": 1,
-          "isDisabled": false,
-          "isVisible": true,
-          "label": "Second Option",
-          "onClick": "",
-          "widgetId": ""
-        },
         "menuItem3": {
           "backgroundColor": "#DD4B34",
           "iconAlign": "right",
           "iconColor": "#FFFFFF",
           "iconName": "log-out",
           "id": "menuItem3",
-          "index": 2,
+          "index": 1,
           "isDisabled": false,
           "isVisible": true,
           "label": "Sair",
-          "onClick": "",
+          "onClick": "{{navigateTo('LoginScreen', {}, 'SAME_WINDOW');\nclearStore()}}",
           "textColor": "#FFFFFF",
           "widgetId": ""
+        },
+        "menuItem9cfs0g3jbr": {
+          "id": "menuItem9cfs0g3jbr",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": "{{ appsmith.store.role === \"admin\" || appsmith.store.role === \"primadmin\" || appsmith.store.role === \"worker\"}}",
+          "label": "Gerir Livros",
+          "widgetId": "onjhhi9wat"
         }
       },
       "placement": "CENTER",
@@ -102,6 +109,7 @@
     }
   },
   "isCanvas": false,
+  "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "b7nzkc3tw6",
@@ -122,6 +130,6 @@
   "topRow": 0,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
-  "widgetId": "vli93c9r2u",
-  "widgetName": "ButtonGroup1"
+  "widgetId": "5p3faa01ry",
+  "widgetName": "ButtonGroup1Copy"
 }

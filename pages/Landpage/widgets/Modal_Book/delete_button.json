@@ -1,17 +1,16 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 43,
+  "bottomRow": 14,
   "boxShadow": "none",
-  "buttonColor": "#234f32",
-  "buttonVariant": "SECONDARY",
+  "buttonColor": "#dd4b34",
+  "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -21,26 +20,30 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "73g0910w8c",
-  "leftColumn": 14,
+  "key": "7wgr99cn60",
+  "leftColumn": 46,
   "minWidth": 120,
-  "mobileBottomRow": 37,
-  "mobileLeftColumn": 30,
-  "mobileRightColumn": 46,
-  "mobileTopRow": 33,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 14,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo('SignUpScreen', {}, 'SAME_WINDOW');}}",
-  "parentId": "o08uy9arzl",
+  "onClick": "{{showModal(delete_confirm.name);}}",
+  "originalBottomRow": 22,
+  "originalTopRow": 18,
+  "parentColumnSpace": 6.4921875,
+  "parentId": "ihdkjwk7cg",
+  "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
-  "resetFormOnClick": true,
+  "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 42,
-  "text": "Voltar",
-  "topRow": 39,
+  "rightColumn": 62,
+  "text": "Deletar",
+  "topRow": 10,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "40dgoewsco",
-  "widgetName": "ResetButton"
+  "widgetId": "4hjnfd8poq",
+  "widgetName": "delete_button"
 }

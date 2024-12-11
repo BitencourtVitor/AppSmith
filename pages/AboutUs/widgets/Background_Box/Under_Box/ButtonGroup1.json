@@ -12,9 +12,6 @@
   "dynamicBindingPathList": [
     {
       "key": "groupButtons.groupButton3.menuItems.menuItem2.isVisible"
-    },
-    {
-      "key": "groupButtons.groupButton3.menuItems.menuItem9cfs0g3jbr.isVisible"
     }
   ],
   "dynamicPropertyPathList": [
@@ -34,9 +31,6 @@
     },
     {
       "key": "groupButtons.groupButton3.menuItems.menuItem3.onClick"
-    },
-    {
-      "key": "groupButtons.groupButton3.menuItems.menuItem1.onClick"
     }
   ],
   "groupButtons": {
@@ -87,20 +81,10 @@
       "isVisible": true,
       "label": "Mais",
       "menuItems": {
-        "menuItem1": {
-          "backgroundColor": "#FFFFFF",
-          "id": "menuItem1",
-          "index": 0,
-          "isDisabled": false,
-          "isVisible": true,
-          "label": "Meu usuário",
-          "onClick": "{{showModal(Modal1.name);}}",
-          "widgetId": ""
-        },
         "menuItem2": {
           "backgroundColor": "#FFFFFF",
           "id": "menuItem2",
-          "index": 1,
+          "index": 0,
           "isDisabled": false,
           "isVisible": "{{ appsmith.store.role === \"admin\" || appsmith.store.role === \"primadmin\" }}",
           "label": "Gerir Usuários",
@@ -113,21 +97,13 @@
           "iconColor": "#FFFFFF",
           "iconName": "log-out",
           "id": "menuItem3",
-          "index": 3,
+          "index": 1,
           "isDisabled": false,
           "isVisible": true,
           "label": "Sair",
           "onClick": "{{navigateTo('LoginScreen', {}, 'SAME_WINDOW');\nclearStore()}}",
           "textColor": "#FFFFFF",
           "widgetId": ""
-        },
-        "menuItem9cfs0g3jbr": {
-          "id": "menuItem9cfs0g3jbr",
-          "index": 2,
-          "isDisabled": false,
-          "isVisible": "{{ appsmith.store.role === \"admin\" || appsmith.store.role === \"primadmin\" }}",
-          "label": "Gerir Livros",
-          "widgetId": "onjhhi9wat"
         }
       },
       "placement": "CENTER",

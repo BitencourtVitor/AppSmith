@@ -1,17 +1,19 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 43,
+  "bottomRow": 10,
   "boxShadow": "none",
-  "buttonColor": "#234f32",
-  "buttonVariant": "SECONDARY",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
     {
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -21,26 +23,28 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "73g0910w8c",
-  "leftColumn": 14,
+  "key": "1p7vngxhml",
+  "leftColumn": 46,
   "minWidth": 120,
-  "mobileBottomRow": 37,
-  "mobileLeftColumn": 30,
-  "mobileRightColumn": 46,
-  "mobileTopRow": 33,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 46,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo('SignUpScreen', {}, 'SAME_WINDOW');}}",
-  "parentId": "o08uy9arzl",
+  "onClick": "{{showModal(emprestimo_Modal.name);}}",
+  "parentColumnSpace": 6.4921875,
+  "parentId": "ihdkjwk7cg",
+  "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
-  "resetFormOnClick": true,
+  "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 42,
-  "text": "Voltar",
-  "topRow": 39,
+  "rightColumn": 62,
+  "text": "Emprestar",
+  "topRow": 6,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "40dgoewsco",
-  "widgetName": "ResetButton"
+  "widgetId": "48uibs02re",
+  "widgetName": "Button5"
 }
