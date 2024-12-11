@@ -1,11 +1,12 @@
 {
   "gitSyncId": "675302b460a12165323cc3ec_ea4da83b-de9f-408a-b38a-488bac526f4c",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 5000,
+          "bottomRow": 760,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -26,7 +27,7 @@
         }
       }
     ],
-    "name": "Page1",
-    "slug": "page1"
+    "name": "LoginScreen",
+    "slug": "loginscreen"
   }
 }

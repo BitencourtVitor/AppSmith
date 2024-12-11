@@ -1,13 +1,22 @@
 {
   "appIsExample": false,
   "appLayout": {
-    "type": "FLUID"
+    "type": "MOBILE"
   },
   "applicationDetail": {
     "appPositioning": {
       "type": "FIXED"
     },
-    "navigationSetting": {},
+    "navigationSetting": {
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "navStyle": "stacked",
+      "orientation": "top",
+      "position": "static",
+      "showNavbar": true,
+      "showSignIn": true
+    },
     "themeSetting": {
       "appMaxWidth": "LARGE",
       "density": 1.0,
@@ -18,21 +27,42 @@
   "collapseInvisibleWidgets": true,
   "color": "#F1DEFF",
   "evaluationVersion": 2,
-  "icon": "basketball",
+  "icon": "book",
   "pages": [
     {
-      "id": "Page1",
+      "id": "LoginScreen",
       "isDefault": true
+    },
+    {
+      "id": "Landpage",
+      "isDefault": false
+    },
+    {
+      "id": "AboutUs",
+      "isDefault": false
+    },
+    {
+      "id": "SignUpScreen",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
-    "type": "FLUID"
+    "type": "MOBILE"
   },
   "unpublishedApplicationDetail": {
     "appPositioning": {
       "type": "FIXED"
     },
-    "navigationSetting": {},
+    "navigationSetting": {
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "navStyle": "stacked",
+      "orientation": "top",
+      "position": "static",
+      "showNavbar": true,
+      "showSignIn": true
+    },
     "themeSetting": {
       "appMaxWidth": "LARGE",
       "density": 1.0,

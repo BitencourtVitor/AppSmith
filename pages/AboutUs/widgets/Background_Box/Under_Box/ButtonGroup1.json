@@ -1,0 +1,150 @@
+{
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 5,
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  "buttonVariant": "SECONDARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "dynamicBindingPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem2.isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem1.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "#234f32",
+      "buttonType": "SIMPLE",
+      "iconName": "user",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": true,
+      "isVisible": true,
+      "label": "Sobre nós",
+      "menuItems": {},
+      "onClick": "{{navigateTo('AboutUs', {}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "#234f32",
+      "buttonType": "SIMPLE",
+      "iconName": "list-columns",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Livros",
+      "menuItems": {
+        "menuItemjyenq8r742": {
+          "id": "menuItemjyenq8r742",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Menu Item",
+          "widgetId": "5wiwrfbb42"
+        }
+      },
+      "onClick": "{{navigateTo('Landpage', {}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton3": {
+      "buttonColor": "#234f32",
+      "buttonType": "MENU",
+      "iconName": "cog",
+      "id": "groupButton3",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Mais",
+      "menuItems": {
+        "menuItem1": {
+          "backgroundColor": "#FFFFFF",
+          "id": "menuItem1",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Meu usuário",
+          "onClick": "{{showModal(Modal1.name);}}",
+          "widgetId": ""
+        },
+        "menuItem2": {
+          "backgroundColor": "#FFFFFF",
+          "id": "menuItem2",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": "true",
+          "label": "Listar usuários",
+          "onClick": "",
+          "widgetId": ""
+        },
+        "menuItem3": {
+          "backgroundColor": "#DD4B34",
+          "iconAlign": "right",
+          "iconColor": "#FFFFFF",
+          "iconName": "log-out",
+          "id": "menuItem3",
+          "index": 3,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Sair",
+          "onClick": "{{navigateTo('LoginScreen', {}, 'SAME_WINDOW');\nclearStore()}}",
+          "textColor": "#FFFFFF",
+          "widgetId": ""
+        },
+        "menuItem9cfs0g3jbr": {
+          "id": "menuItem9cfs0g3jbr",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "CRUD Livros",
+          "widgetId": "onjhhi9wat"
+        }
+      },
+      "placement": "CENTER",
+      "widgetId": ""
+    }
+  },
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "b7nzkc3tw6",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "orientation": "horizontal",
+  "parentColumnSpace": 6.21875,
+  "parentId": "guszkwtfz7",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "topRow": 0,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "uvevgohqej",
+  "widgetName": "ButtonGroup1"
+}
