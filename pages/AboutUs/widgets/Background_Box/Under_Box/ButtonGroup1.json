@@ -9,10 +9,20 @@
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
     }
   },
-  "dynamicBindingPathList": [],
+  "dynamicBindingPathList": [
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem2.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem9cfs0g3jbr.isVisible"
+    }
+  ],
   "dynamicPropertyPathList": [
     {
       "key": "groupButtons.groupButton3.menuItems.menuItem2.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem9cfs0g3jbr.isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -92,8 +102,8 @@
           "id": "menuItem2",
           "index": 1,
           "isDisabled": false,
-          "isVisible": "true",
-          "label": "Listar usuários",
+          "isVisible": "{{ appsmith.store.role === \"admin\" || appsmith.store.role === \"primadmin\" }}",
+          "label": "Gerir Usuários",
           "onClick": "",
           "widgetId": ""
         },
@@ -115,8 +125,8 @@
           "id": "menuItem9cfs0g3jbr",
           "index": 2,
           "isDisabled": false,
-          "isVisible": true,
-          "label": "CRUD Livros",
+          "isVisible": "{{ appsmith.store.role === \"admin\" || appsmith.store.role === \"primadmin\" }}",
+          "label": "Gerir Livros",
           "widgetId": "onjhhi9wat"
         }
       },
